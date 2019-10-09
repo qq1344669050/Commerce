@@ -1,0 +1,1932 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c91aea30-708f-4c53-b670-e23531b1c381" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_yammer_metrics_metrics_core_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_2_11_0_10_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_streaming_2_11_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_spark_spark_streaming_kafka_0_10_2_11_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_modules_scala_parser_combinators_2_11_1_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advertstat/advertstat.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advertstat/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advertstat/src/data/ad.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advertstat/src/main/scala/AdverStat.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advertstat/src/main/scala/DataModel.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advertstat/src/main/scala/JdbcHelper.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pagestat/pageStat.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pagestat/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pagestat/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pagestat/src/main/resources/page.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pagestat/src/main/scala/DataModel.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pagestat/src/main/scala/PageConvertStat.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pagestat/src/main/scala/PageStat.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/resources/product.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/scala/AreaTop3Stat.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/scala/DataModel.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/scala/GroupConcatDistinct.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session/src/main/scala/SessionStatisticAgg.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/session/src/main/scala/SortKey.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/.checkpoint-1570620530000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/.checkpoint-1570620535000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/.checkpoint-1570620535000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/.checkpoint-1570620540000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/.checkpoint-1570620540000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/.checkpoint-1570620545000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/.checkpoint-1570620545000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/.checkpoint-1570620550000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/.checkpoint-1570620550000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/.checkpoint-1570620555000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1032/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1032/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1032/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1032/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1114/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1114/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1114/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1114/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1170/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1170/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1170/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1170/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1226/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1226/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1226/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1226/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1282/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1282/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1282/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1282/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1338/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1338/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1338/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1338/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-139/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-139/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-139/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-139/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1394/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1394/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1394/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1394/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1476/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1476/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1476/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1476/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1532/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1532/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1532/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1532/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1588/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1588/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1588/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1588/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1644/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1644/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1644/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1644/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1700/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1700/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1700/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1700/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1756/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1756/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1756/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1756/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1838/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1838/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1838/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1838/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1894/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1894/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1894/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1894/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1950/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1950/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1950/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-1950/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-196/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-196/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-196/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-196/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2006/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2006/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2006/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2006/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2062/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2062/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2062/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2062/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2118/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2118/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2118/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2118/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2200/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2200/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2200/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2200/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2256/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2256/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2256/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2256/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2312/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2312/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2312/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2312/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2368/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2368/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2368/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2368/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2424/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2424/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2424/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2424/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2480/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2480/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2480/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2480/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-252/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-252/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-252/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-252/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2562/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2562/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2562/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2562/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2618/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2618/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2618/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2618/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2674/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2674/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2674/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2674/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2730/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2730/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2730/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2730/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2786/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2786/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2786/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2786/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-28/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-28/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-28/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-28/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2842/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2842/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2842/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2842/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2924/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2924/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2924/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2924/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2980/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2980/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2980/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-2980/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3036/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3036/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3036/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3036/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-308/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-308/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-308/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-308/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3092/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3092/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3092/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3092/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3148/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3148/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3148/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3148/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3204/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3204/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3204/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3204/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3286/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3286/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3286/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3286/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3342/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3342/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3342/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3342/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3398/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3398/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3398/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3398/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3454/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3454/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3454/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3454/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3510/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3510/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3510/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3510/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3566/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3566/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3566/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3566/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3648/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3648/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3648/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3648/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3704/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3704/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3704/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3704/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3760/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3760/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3760/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3760/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3816/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3816/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3816/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3816/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3872/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3872/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3872/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3872/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-390/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-390/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-390/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-390/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3928/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3928/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3928/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-3928/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4010/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4010/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4010/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4010/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4066/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4066/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4066/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4066/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4122/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4122/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4122/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4122/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4178/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4178/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4178/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4178/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4234/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4234/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4234/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4234/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4290/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4290/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4290/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4290/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4372/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4372/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4372/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4372/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4428/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4428/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4428/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4428/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-446/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-446/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-446/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-446/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4484/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4484/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4484/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4484/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4540/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4540/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4540/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4540/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4596/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4596/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4596/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4596/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4652/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4652/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4652/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4652/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4734/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4734/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4734/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4734/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4790/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4790/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4790/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4790/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4846/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4846/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4846/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4846/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4902/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4902/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4902/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4902/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4958/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4958/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4958/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-4958/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5014/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5014/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5014/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5014/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-502/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-502/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-502/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-502/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5096/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5096/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5096/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5096/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5152/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5152/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5152/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5152/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5208/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5208/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5208/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5208/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5264/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5264/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5264/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5264/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5320/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5320/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5320/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5320/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5376/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5376/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5376/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5376/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5458/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5458/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5458/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5458/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5514/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5514/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5514/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5514/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5570/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5570/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5570/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5570/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-558/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-558/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-558/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-558/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5626/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5626/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5626/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5626/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5682/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5682/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5682/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5682/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5738/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5738/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5738/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5738/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5820/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5820/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5820/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5820/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5876/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5876/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5876/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5876/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5932/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5932/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5932/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5932/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5988/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5988/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5988/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-5988/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6044/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6044/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6044/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6044/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6100/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6100/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6100/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6100/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-614/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-614/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-614/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-614/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6182/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6182/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6182/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6182/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6238/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6238/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6238/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6238/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6294/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6294/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6294/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6294/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6350/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6350/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6350/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6350/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6406/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6406/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6406/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6406/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6462/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6462/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6462/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6462/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6544/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6544/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6544/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6544/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6600/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6600/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6600/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6600/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6656/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6656/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6656/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6656/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-670/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-670/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-670/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-670/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6712/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6712/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6712/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6712/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6768/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6768/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6768/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6768/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6824/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6824/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6824/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6824/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6906/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6906/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6906/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6906/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6962/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6962/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6962/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-6962/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7018/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7018/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7018/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7018/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7074/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7074/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7074/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7074/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7130/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7130/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7130/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7130/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7186/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7186/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7186/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7186/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7268/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7268/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7268/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7268/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7324/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7324/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7324/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7324/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7380/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7380/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7380/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7380/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7436/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7436/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7436/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7436/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7492/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7492/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7492/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7492/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-752/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-752/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-752/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-752/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7548/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7548/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7548/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7548/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7630/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7630/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7630/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7630/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7686/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7686/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7686/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7686/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7742/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7742/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7742/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7742/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7798/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7798/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7798/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7798/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7854/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7854/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7854/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7854/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7910/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7910/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7910/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7910/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7992/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7992/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7992/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-7992/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8003/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8003/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8003/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8003/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8003/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8003/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8003/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8003/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8003/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8003/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8048/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8048/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8048/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8048/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8059/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8059/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8059/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8059/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8059/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8059/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8059/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8059/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8059/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-8059/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-808/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-808/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-808/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-808/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-82/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-82/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-82/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-82/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-864/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-864/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-864/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-864/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-920/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-920/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-920/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-920/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-976/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-976/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-976/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/0230b046-b1a5-43ff-9cf6-2f2242a1d27d/rdd-976/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-110/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-110/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-138/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-138/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-149/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-149/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-149/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-149/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-149/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-149/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-149/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-149/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-149/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-149/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-167/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-167/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-196/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-196/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-2/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-2/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-207/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-207/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-207/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-207/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-207/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-207/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-207/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-207/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-207/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-207/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-224/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-224/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-28/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-28/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-55/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-55/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-83/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/26b9a781-876f-44ed-9df2-f572f71e6927/rdd-83/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-138/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-138/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-138/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-138/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-194/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-194/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-194/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-194/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-252/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-252/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-252/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-252/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-28/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-28/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-28/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-28/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-308/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-308/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-308/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-308/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-319/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-319/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-319/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-319/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-319/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-319/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-319/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-319/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-319/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-319/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-390/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-390/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-390/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-390/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-401/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-401/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-401/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-401/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-401/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-401/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-401/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-401/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-401/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-401/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-82/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-82/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-82/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/52c2f6c2-cb55-4294-8000-40ac2d5d0fa2/rdd-82/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/aa8b607a-d862-4948-a172-9617178079ae/rdd-783/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/aa8b607a-d862-4948-a172-9617178079ae/rdd-783/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/aa8b607a-d862-4948-a172-9617178079ae/rdd-783/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/aa8b607a-d862-4948-a172-9617178079ae/rdd-783/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/aa8b607a-d862-4948-a172-9617178079ae/rdd-794/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/aa8b607a-d862-4948-a172-9617178079ae/rdd-794/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/aa8b607a-d862-4948-a172-9617178079ae/rdd-794/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/aa8b607a-d862-4948-a172-9617178079ae/rdd-794/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1011/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1011/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1040/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1040/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1094/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1094/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-110/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-110/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1123/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1123/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1151/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1151/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1180/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1180/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1208/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1208/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1236/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1236/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1264/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1264/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1293/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1293/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1322/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1322/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1351/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1351/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-137/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-137/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1379/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1379/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1408/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1408/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1462/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1462/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1491/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1491/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1502/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1502/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1502/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1502/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1502/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1502/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1502/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1502/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1502/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1502/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1519/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1519/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1548/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1548/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1559/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1559/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1559/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1559/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1559/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1559/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1559/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1559/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1559/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1559/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1576/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1576/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1605/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1605/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1616/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1616/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1616/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1616/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1616/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1616/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1616/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1616/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1616/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-1616/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-164/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-164/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-193/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-193/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-2/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-2/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-221/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-221/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-250/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-250/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-278/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-278/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-28/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-28/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-306/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-306/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-361/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-361/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-389/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-389/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-417/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-417/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-445/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-445/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-474/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-474/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-502/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-502/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-530/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-530/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-55/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-55/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-558/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-558/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-586/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-586/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-615/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-615/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-643/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-643/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-672/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-672/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-727/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-727/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-756/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-756/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-785/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-785/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-813/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-813/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-82/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-82/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-840/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-840/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-869/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-869/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-897/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-897/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-926/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-926/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-954/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-954/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-983/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/b5c4b06b-66ed-4b65-a33d-04a9a380f2e4/rdd-983/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/checkpoint-1570620530000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/checkpoint-1570620535000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/checkpoint-1570620535000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/checkpoint-1570620540000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/checkpoint-1570620540000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/checkpoint-1570620545000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/checkpoint-1570620545000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/checkpoint-1570620550000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/checkpoint-1570620550000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/checkpoint-1570620555000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/e189fc85-438d-43e3-9944-30eb9693b172/rdd-28/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/e189fc85-438d-43e3-9944-30eb9693b172/rdd-28/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/e189fc85-438d-43e3-9944-30eb9693b172/rdd-28/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/e189fc85-438d-43e3-9944-30eb9693b172/rdd-28/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/e189fc85-438d-43e3-9944-30eb9693b172/rdd-39/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/e189fc85-438d-43e3-9944-30eb9693b172/rdd-39/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/e189fc85-438d-43e3-9944-30eb9693b172/rdd-39/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/e189fc85-438d-43e3-9944-30eb9693b172/rdd-39/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/e189fc85-438d-43e3-9944-30eb9693b172/rdd-39/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/e189fc85-438d-43e3-9944-30eb9693b172/rdd-39/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/e189fc85-438d-43e3-9944-30eb9693b172/rdd-39/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/e189fc85-438d-43e3-9944-30eb9693b172/rdd-39/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/e189fc85-438d-43e3-9944-30eb9693b172/rdd-39/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/e189fc85-438d-43e3-9944-30eb9693b172/rdd-39/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/e189fc85-438d-43e3-9944-30eb9693b172/rdd-82/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/e189fc85-438d-43e3-9944-30eb9693b172/rdd-82/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/e189fc85-438d-43e3-9944-30eb9693b172/rdd-82/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/e189fc85-438d-43e3-9944-30eb9693b172/rdd-82/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5929/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5929/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5929/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5929/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5957/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5957/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5957/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5957/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5968/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5968/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5968/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5968/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5968/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5968/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5968/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5968/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5968/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5968/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5986/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5986/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5986/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-5986/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-6014/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-6014/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-6014/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-6014/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-6025/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-6025/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-6025/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-6025/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-6025/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-6025/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-6025/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-6025/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-6025/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-6025/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9553/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9553/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9553/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9553/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9580/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9580/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9580/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9580/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9607/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9607/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9607/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9607/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9634/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9634/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9634/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9634/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9661/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9661/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9661/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9661/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9688/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9688/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9688/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/ec41a8d2-4b4a-47e2-84dd-6583904c99db/rdd-9688/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-357/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-357/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-357/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-357/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-368/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-368/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-368/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-368/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-368/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-368/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-368/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-368/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-368/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-368/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-373/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-373/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-373/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-373/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-388/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-388/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-388/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-388/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-399/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-399/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-399/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-399/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-399/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-399/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-399/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-399/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-399/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-399/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-404/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-404/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-404/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f6b32d30-1069-4069-a005-01cc9ef81ffb/rdd-404/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-194/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-194/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-205/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-205/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-205/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-205/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-205/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-205/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-205/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-205/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-205/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-205/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-222/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-222/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-251/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-251/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-262/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-262/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-262/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-262/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-262/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-262/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-262/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-262/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-262/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-262/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-278/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-278/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-307/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/f9d6d06b-f106-428d-9fe0-9d524659292f/rdd-307/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-311/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-311/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-311/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-311/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-326/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-326/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-326/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-326/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-337/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-337/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-337/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-337/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-337/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-337/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-337/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-337/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-337/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-337/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-342/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-342/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-342/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-342/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-357/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-357/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-357/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-357/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-368/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-368/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-368/.part-00001.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-368/.part-00002.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-368/.part-00003.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-368/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-368/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-368/part-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-368/part-00002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/fa212661-9f8b-4218-a947-29a6aba8de43/rdd-368/part-00003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/receivedBlockMetadata/log-1570619167775-1570619227775" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/receivedBlockMetadata/log-1570619827151-1570619887151" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/receivedBlockMetadata/log-1570620282275-1570620342275" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/receivedBlockMetadata/log-1570620350569-1570620410569" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/receivedBlockMetadata/log-1570620411388-1570620471388" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/receivedBlockMetadata/log-1570620472933-1570620532933" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-streaming/receivedBlockMetadata/log-1570620536266-1570620596266" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/product_info/.part-00000-8c8f1fb3-5fe3-430f-87fd-b3100fa19d44.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/product_info/.part-00001-8c8f1fb3-5fe3-430f-87fd-b3100fa19d44.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/product_info/.part-00002-8c8f1fb3-5fe3-430f-87fd-b3100fa19d44.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/product_info/.part-00003-8c8f1fb3-5fe3-430f-87fd-b3100fa19d44.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/user_info/.part-00000-d43e0cdf-69ac-45ab-a4ff-21822c97045b.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/user_info/.part-00001-d43e0cdf-69ac-45ab-a4ff-21822c97045b.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/user_info/.part-00002-d43e0cdf-69ac-45ab-a4ff-21822c97045b.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/user_info/.part-00003-d43e0cdf-69ac-45ab-a4ff-21822c97045b.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/user_info/part-00000-d43e0cdf-69ac-45ab-a4ff-21822c97045b.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/user_info/part-00001-d43e0cdf-69ac-45ab-a4ff-21822c97045b.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/user_info/part-00002-d43e0cdf-69ac-45ab-a4ff-21822c97045b.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/user_info/part-00003-d43e0cdf-69ac-45ab-a4ff-21822c97045b.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/user_visit_action/.part-00000-3a14069c-daec-4082-aec6-a0e6786de6fb.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/user_visit_action/.part-00001-3a14069c-daec-4082-aec6-a0e6786de6fb.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/user_visit_action/.part-00002-3a14069c-daec-4082-aec6-a0e6786de6fb.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/user_visit_action/.part-00003-3a14069c-daec-4082-aec6-a0e6786de6fb.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/user_visit_action/part-00000-3a14069c-daec-4082-aec6-a0e6786de6fb.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/user_visit_action/part-00001-3a14069c-daec-4082-aec6-a0e6786de6fb.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/user_visit_action/part-00002-3a14069c-daec-4082-aec6-a0e6786de6fb.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-warehouse/user_visit_action/part-00003-3a14069c-daec-4082-aec6-a0e6786de6fb.snappy.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/hydra.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hydra.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/resources/commerce.properties" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/resources/commerce.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/src/main/scala/commons/constant/Constants.scala" beforeDir="false" afterPath="$PROJECT_DIR$/commons/src/main/scala/commons/constant/Constants.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/db.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/log/log.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/log/log1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/log/logmirror.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c10.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c101.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c101.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c111.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c111.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c121.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c121.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c130.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c130.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c141.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c141.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c150.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c150.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c161.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c161.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c171.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c171.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c180.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c180.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c191.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c191.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c1a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c1a1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c1b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c1b1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c1e0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c1e0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c1f1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c1f1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c20.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c200.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c200.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c211.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c211.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c221.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c221.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c230.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c241.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c31.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c31.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c380.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c380.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c391.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c391.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c3a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c3a1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c3b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c3b1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c41.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c51.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c51.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c510.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c510.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c5b0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c5b0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c5c1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c5c1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c5d0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c5d0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c5e1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c5e1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c5f0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c5f0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c60.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c610.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c610.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c621.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c621.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c630.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c630.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c650.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c650.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c661.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c661.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c670.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c670.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c681.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c681.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c690.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c690.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c6a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c6a1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c6b0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c6b0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c6c1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c6c1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c6d0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c6d0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c6e1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c6e1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c6f0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c6f0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c701.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c701.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c71.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c71.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c711.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c711.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c721.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c721.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c771.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c771.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c7b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c7b1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c7e1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c7e1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c81.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c81.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c811.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c811.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c821.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c821.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c831.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c831.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c880.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c880.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c891.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c891.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c8a0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c8a0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c8b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c8b1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c90.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c960.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c960.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c990.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/c990.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/ca1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/seg0/cf0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/metastore_db/service.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock/src/main/scala/MockRealTimeData.scala" beforeDir="false" afterPath="$PROJECT_DIR$/mock/src/main/scala/MockRealTimeData.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session/session.iml" beforeDir="false" afterPath="$PROJECT_DIR$/session/session.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session/src/main/scala/SessionStat.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/product_info/.part-00000-7fde5a4d-74b3-47ea-82bb-417c7f32a394.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/product_info/.part-00001-7fde5a4d-74b3-47ea-82bb-417c7f32a394.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/product_info/.part-00002-7fde5a4d-74b3-47ea-82bb-417c7f32a394.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/product_info/.part-00003-7fde5a4d-74b3-47ea-82bb-417c7f32a394.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/product_info/part-00000-7fde5a4d-74b3-47ea-82bb-417c7f32a394.snappy.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/product_info/part-00000-8c8f1fb3-5fe3-430f-87fd-b3100fa19d44.snappy.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/product_info/part-00001-7fde5a4d-74b3-47ea-82bb-417c7f32a394.snappy.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/product_info/part-00001-8c8f1fb3-5fe3-430f-87fd-b3100fa19d44.snappy.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/product_info/part-00002-7fde5a4d-74b3-47ea-82bb-417c7f32a394.snappy.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/product_info/part-00002-8c8f1fb3-5fe3-430f-87fd-b3100fa19d44.snappy.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/product_info/part-00003-7fde5a4d-74b3-47ea-82bb-417c7f32a394.snappy.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/spark-warehouse/product_info/part-00003-8c8f1fb3-5fe3-430f-87fd-b3100fa19d44.snappy.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/user_info/.part-00000-f34e25ea-b3b9-4fda-b24b-2d0c8c14d7b2.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/user_info/.part-00001-f34e25ea-b3b9-4fda-b24b-2d0c8c14d7b2.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/user_info/.part-00002-f34e25ea-b3b9-4fda-b24b-2d0c8c14d7b2.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/user_info/.part-00003-f34e25ea-b3b9-4fda-b24b-2d0c8c14d7b2.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/user_info/part-00000-f34e25ea-b3b9-4fda-b24b-2d0c8c14d7b2.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/user_info/part-00001-f34e25ea-b3b9-4fda-b24b-2d0c8c14d7b2.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/user_info/part-00002-f34e25ea-b3b9-4fda-b24b-2d0c8c14d7b2.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/user_info/part-00003-f34e25ea-b3b9-4fda-b24b-2d0c8c14d7b2.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/user_visit_action/.part-00000-7c432d1a-c159-4302-adda-99b570194087.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/user_visit_action/.part-00001-7c432d1a-c159-4302-adda-99b570194087.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/user_visit_action/.part-00002-7c432d1a-c159-4302-adda-99b570194087.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/user_visit_action/.part-00003-7c432d1a-c159-4302-adda-99b570194087.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/user_visit_action/part-00000-7c432d1a-c159-4302-adda-99b570194087.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/user_visit_action/part-00001-7c432d1a-c159-4302-adda-99b570194087.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/user_visit_action/part-00002-7c432d1a-c159-4302-adda-99b570194087.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-warehouse/user_visit_action/part-00003-7c432d1a-c159-4302-adda-99b570194087.snappy.parquet" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/commons/target/" />
+    <ignored path="$PROJECT_DIR$/mock/target/" />
+    <ignored path="$PROJECT_DIR$/session/target/" />
+    <ignored path="$PROJECT_DIR$/pageStat/target/" />
+    <ignored path="$PROJECT_DIR$/areastat/target/" />
+    <ignored path="$PROJECT_DIR$/areastat/advertstat/target/" />
+    <ignored path="$PROJECT_DIR$/advertstat/target/" />
+    <ignored path="$PROJECT_DIR$/product/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="318495637">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="crc" value="1" />
+          <entry key="properties" value="4" />
+          <entry key="scala" value="14" />
+          <entry key="xml" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Properties" value="4" />
+          <entry key="Scala" value="14" />
+          <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="properties" value="19" />
+          <entry key="scala" value="80" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Properties" value="19" />
+          <entry key="Scala" value="80" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1142240080">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="properties" value="12" />
+          <entry key="scala" value="238" />
+          <entry key="sql" value="61" />
+          <entry key="txt" value="12" />
+          <entry key="xml" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="Properties" value="12" />
+          <entry key="SQL" value="61" />
+          <entry key="Scala" value="238" />
+          <entry key="XML" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="3" />
+          <entry key="properties" value="11" />
+          <entry key="scala" value="87" />
+          <entry key="sql" value="12" />
+          <entry key="xml" value="25" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="3" />
+          <entry key="Properties" value="11" />
+          <entry key="SQL" value="12" />
+          <entry key="Scala" value="87" />
+          <entry key="XML" value="25" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/advertstat/src/main/scala/AdverStat.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mock/src/main/scala/MockRealTimeData.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="59">
+              <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commons/src/main/scala/commons/constant/Constants.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="86">
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commons/src/main/resources/commerce.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="35" column="26" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>100</find>
+      <find>dateHourCountMap</find>
+      <find>top10</find>
+      <find>top10ActiveSession</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/session/src/main/scala/SessionStat.scala" />
+        <option value="$PROJECT_DIR$/pageStat/src/main/scala/com/atguigu/page/DataModel.scala" />
+        <option value="$PROJECT_DIR$/pageStat/src/main/scala/com/atguigu/page/PageOneStepConvertRate.scala" />
+        <option value="$PROJECT_DIR$/pageStat/src/main/scala/page/DataModel.scala" />
+        <option value="$PROJECT_DIR$/pageStat/src/main/scala/page/PageOneStepConvertRate.scala" />
+        <option value="$PROJECT_DIR$/pageStat/pom.xml" />
+        <option value="$PROJECT_DIR$/pageStat/src/main/scala/page/pom.xml" />
+        <option value="$PROJECT_DIR$/pageStat/src/main/scala/page/PageStat.scala" />
+        <option value="$PROJECT_DIR$/pageStat/src/main/scala/page/PageConvertStat.scala" />
+        <option value="$PROJECT_DIR$/pageStat/src/main/scala/DataModel.scala" />
+        <option value="$PROJECT_DIR$/pageStat/src/main/scala/PageConvertStat.scala" />
+        <option value="$PROJECT_DIR$/advertstat/pom.xml" />
+        <option value="$PROJECT_DIR$/commons/src/main/scala/commons/constant/Constants.scala" />
+        <option value="$PROJECT_DIR$/advertstat/src/data/ad.sql" />
+        <option value="$PROJECT_DIR$/session/src/main/scala/SessionStatisticAgg.scala" />
+        <option value="$PROJECT_DIR$/pagestat/src/main/scala/PageStat.scala" />
+        <option value="$PROJECT_DIR$/areastat/src/main/resources/product.sql" />
+        <option value="$PROJECT_DIR$/areastat/pom.xml" />
+        <option value="$PROJECT_DIR$/product/pom.xml" />
+        <option value="$PROJECT_DIR$/product/src/main/scala/DataModel.scala" />
+        <option value="$PROJECT_DIR$/product/src/main/scala/AreaTop3Stat.scala" />
+        <option value="$PROJECT_DIR$/commons/src/main/resources/commerce.properties" />
+        <option value="$PROJECT_DIR$/mock/src/main/scala/MockRealTimeData.scala" />
+        <option value="$PROJECT_DIR$/advertstat/src/main/scala/AdverStat.scala" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>SQL</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SqlNoDataSourceInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="commerce_basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce_basic" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570620562471" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="page" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\gp23\commerce_basic\product\src\main\scala" />
+      <recent name="D:\gp23\commerce_basic\product\src\main\resources" />
+      <recent name="D:\gp23\commerce_basic\areastat\src\main\scala" />
+      <recent name="D:\gp23\commerce_basic\areastat" />
+      <recent name="D:\gp23\commerce_basic\areastat\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.MockRealTimeData">
+    <configuration name="AdverStat" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="AdverStat" />
+      <module name="advertstat" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AreaTop3Stat" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="AreaTop3Stat" />
+      <module name="product" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MockRealTimeData" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="MockRealTimeData" />
+      <module name="mock" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PageStat" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="PageStat" />
+      <module name="pageStat" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SessionStatisticAgg" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="SessionStatisticAgg" />
+      <module name="session" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.AreaTop3Stat" />
+      <item itemvalue="Application.SessionStatisticAgg" />
+      <item itemvalue="Application.PageStat" />
+      <item itemvalue="Application.MockRealTimeData" />
+      <item itemvalue="Application.AdverStat" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AdverStat" />
+        <item itemvalue="Application.MockRealTimeData" />
+        <item itemvalue="Application.AreaTop3Stat" />
+        <item itemvalue="Application.PageStat" />
+        <item itemvalue="Application.SessionStatisticAgg" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c91aea30-708f-4c53-b670-e23531b1c381" name="Default Changelist" comment="" />
+      <created>1569935670844</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569935670844</updated>
+      <workItem from="1569935676077" duration="3399000" />
+      <workItem from="1570082632229" duration="585000" />
+      <workItem from="1570083274511" duration="5754000" />
+      <workItem from="1570539802137" duration="3254000" />
+      <workItem from="1570546873454" duration="7023000" />
+      <workItem from="1570553991702" duration="299000" />
+      <workItem from="1570554456243" duration="239000" />
+      <workItem from="1570554721907" duration="70000" />
+      <workItem from="1570554813232" duration="390000" />
+      <workItem from="1570555318848" duration="286000" />
+      <workItem from="1570582867481" duration="7602000" />
+      <workItem from="1570606949373" duration="11900000" />
+    </task>
+    <task id="LOCAL-00001" summary="电商项目">
+      <created>1570083657603</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570083657603</updated>
+    </task>
+    <task id="LOCAL-00002" summary="电商项目">
+      <created>1570083937810</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570083937810</updated>
+    </task>
+    <task id="LOCAL-00003" summary="电商项目">
+      <created>1570084702174</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570084702174</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="40801000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2700454" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.46962234" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.3087028" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.026272578" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="电商项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="电商项目" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar!/scala/math/Ordered.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commons/src/main/scala/commons/utils/Utils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="13" column="31" selection-end-line="383" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commons/src/main/scala/commons/pool/PooledMySqlClientFactory.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="71" selection-end-line="207" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commons/src/main/scala/commons/model/DataModel.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1360">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/session/src/main/scala/SortKey.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="80" lean-forward="true" selection-start-column="80" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock/src/main/scala/SessionStatisticAgg.scala" />
+    <entry file="file://$PROJECT_DIR$/session/src/main/scala/SessionStat.scala" />
+    <entry file="file://$PROJECT_DIR$/page/src/main/scala/com/atguigu/page/DataModel.scala" />
+    <entry file="file://$PROJECT_DIR$/pageStat/src/main/scala/com/atguigu/page/DataModel.scala" />
+    <entry file="file://$PROJECT_DIR$/pageStat/src/main/scala/com/atguigu/page/PageOneStepConvertRate.scala" />
+    <entry file="file://$PROJECT_DIR$/session/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pageStat/src/main/scala/page/PageOneStepConvertRate.scala" />
+    <entry file="file://$PROJECT_DIR$/pageStat/src/main/scala/page/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pageStat/src/main/scala/page/DataModel.scala" />
+    <entry file="file://$PROJECT_DIR$/pagestat/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pageStat/src/main/scala/page/PageStat.scala" />
+    <entry file="file://$PROJECT_DIR$/pageStat/src/main/scala/page/PageConvertStat.scala" />
+    <entry file="file://$PROJECT_DIR$/pagestat/src/main/scala/DataModel.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/areastat/advertstat/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/advertstat/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1865">
+          <caret line="80" column="10" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advertstat/src/main/resources/ad.sql" />
+    <entry file="file://$PROJECT_DIR$/advertstat/areastat/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/areastat/src/main/resources/product.sql" />
+    <entry file="file://$PROJECT_DIR$/areastat/src/main/scala/GroupConcatDistinct.scala" />
+    <entry file="file://$PROJECT_DIR$/areastat/src/main/scala/DataModel.scala" />
+    <entry file="file://$PROJECT_DIR$/areastat/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/areastat/src/main/scala/AreaTop3Stat.scala" />
+    <entry file="file://$PROJECT_DIR$/pagestat/src/main/scala/PageConvertStat.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pagestat/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="18" selection-start-line="13" selection-start-column="4" selection-end-line="61" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pagestat/src/main/resources/page.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/src/main/resources/product.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-383" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock/src/main/scala/MockDataGenerate.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#65#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/session/src/main/scala/SessionStatisticAgg.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="166" column="20" selection-start-line="175" selection-start-column="26" selection-end-line="175" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pagestat/src/main/scala/PageStat.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="91" column="45" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/src/main/scala/GroupConcatDistinctUDAF.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/src/main/scala/AreaTop3ProductApp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-950">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/src/main/scala/GroupConcatDistinct.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1025">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/src/main/scala/AreaTop3Stat.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product/src/main/scala/DataModel.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advertstat/src/main/scala/DataModel.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advertstat/src/data/ad.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="25" column="28" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commons/src/main/scala/commons/conf/ConfigurationManager.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commons/src/main/scala/commons/constant/Constants.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commons/src/main/resources/commerce.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.1.1/spark-sql_2.11-2.1.1.jar!/org/apache/spark/sql/SparkSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advertstat/src/main/scala/JdbcHelper.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-755">
+          <caret line="319" column="3" selection-start-line="319" selection-end-line="319" selection-end-column="3" />
+          <folding>
+            <element signature="e#111#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock/src/main/scala/MockRealTimeData.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advertstat/src/main/scala/AdverStat.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>advertstat</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
